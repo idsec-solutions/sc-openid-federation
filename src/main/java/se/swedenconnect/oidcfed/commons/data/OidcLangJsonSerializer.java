@@ -9,12 +9,11 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.springframework.util.StringUtils;
-
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import org.apache.commons.lang3.StringUtils;
 import se.swedenconnect.oidcfed.commons.utils.OidcUtils;
 
 /**
@@ -149,7 +148,7 @@ public class OidcLangJsonSerializer<T extends LanguageTaggedJson> {
       Map<String, Object> languageObjectMap = new HashMap<>();
       for (String correlatedKey : correlatedKeys) {
         String lang = correlatedKey.substring(correlatedKey.indexOf("#") + 1);
-        if (StringUtils.hasText(lang)) {
+        if (StringUtils.isNotBlank(lang)) {
           languageObjectMap.put(lang, languageTaggedMap.get(correlatedKey));
         }
         // Remove correlated key from consolidated map
@@ -186,7 +185,7 @@ public class OidcLangJsonSerializer<T extends LanguageTaggedJson> {
       .filter(key -> key.contains("#"))
       .forEach(key -> {
         String propName = key.substring(0, key.indexOf("#"));
-        if (StringUtils.hasText(propName)) {
+        if (StringUtils.isNotBlank(propName)) {
           if (!langKeyList.contains(propName)) {
             langKeyList.add(propName);
           }

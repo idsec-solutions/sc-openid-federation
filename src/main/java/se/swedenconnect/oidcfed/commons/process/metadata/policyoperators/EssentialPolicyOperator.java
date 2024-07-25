@@ -1,14 +1,13 @@
 package se.swedenconnect.oidcfed.commons.process.metadata.policyoperators;
 
-import java.util.List;
-
-import org.springframework.lang.NonNull;
-
+import lombok.NonNull;
 import se.swedenconnect.oidcfed.commons.configuration.ValueType;
 import se.swedenconnect.oidcfed.commons.process.metadata.PolicyMergeException;
 import se.swedenconnect.oidcfed.commons.process.metadata.PolicyProcessingException;
 import se.swedenconnect.oidcfed.commons.process.metadata.PolicyTranslationException;
 import se.swedenconnect.oidcfed.commons.utils.OidcUtils;
+
+import java.util.List;
 
 /**
  * Implementation of the "essential" policy operator

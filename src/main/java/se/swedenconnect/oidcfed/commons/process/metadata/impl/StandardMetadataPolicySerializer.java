@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.springframework.lang.NonNull;
-
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import se.swedenconnect.oidcfed.commons.configuration.MetadataParameter;
 import se.swedenconnect.oidcfed.commons.data.metadata.policy.MetadataParameterPolicy;

@@ -2,8 +2,7 @@ package se.swedenconnect.oidcfed.commons.process.metadata.policyoperators;
 
 import java.util.List;
 
-import org.springframework.lang.NonNull;
-
+import lombok.NonNull;
 import se.swedenconnect.oidcfed.commons.process.metadata.PolicyMergeException;
 import se.swedenconnect.oidcfed.commons.process.metadata.PolicyProcessingException;
 import se.swedenconnect.oidcfed.commons.process.metadata.PolicyTranslationException;

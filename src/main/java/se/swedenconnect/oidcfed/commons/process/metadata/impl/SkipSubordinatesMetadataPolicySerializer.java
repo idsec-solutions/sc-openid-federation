@@ -1,7 +1,7 @@
 package se.swedenconnect.oidcfed.commons.process.metadata.impl;
 
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
-import org.springframework.lang.NonNull;
 import se.swedenconnect.oidcfed.commons.configuration.MetadataParameter;
 import se.swedenconnect.oidcfed.commons.data.metadata.policy.EntityTypeMetadataPolicy;
 import se.swedenconnect.oidcfed.commons.data.metadata.policy.MetadataParameterPolicy;
